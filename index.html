@@ -1,0 +1,75 @@
+<html>
+<head>
+<title> Starbucks Cafe </title>
+<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+<div class="row">
+  <div class="column" style="border:2px solid white;">
+   <center> <h1>Starbucks Menu</h1> </center>
+   <center>
+   <img src="menu.jpg" alt="Starbucks Menu" width="80%%" height="85%">
+   </center>
+</div>
+  <div class="column" style="border:2px solid white;">
+   <center><h1>Order Section</h1></center>
+   <center>
+   <div class="size">
+   <center> <img src="1.jpg" alt="order1" width="150px" height="150px">
+   <h4> Name : CAFFE MOCHA </h4>
+   <h4> Size : LARGE </h4>
+   <center><button class="button" type="submit" size="10" onClick="myFunction()"> Order Now </button></center>
+   </div>
+   <div class="size">
+   <center> <img src="2.jpeg" alt="order2" width="150px" height="150px">
+   <h4> Name : CAFFE MOCHA </h4>
+   <h4> Size : LARGE </h4>
+   <center><button class="button" type="submit" size="10" onClick="myFunction()"> Order Now </button></center>
+   </div>
+   <div class="size">
+   <center> <img src="3.jpeg" alt="order3" width="150px" height="150px">
+   <h4> Name : CAFFE MOCHA </h4>
+   <h4> Size : LARGE </h4>
+   <center><button class="button" type="submit" size="10" onClick="myFunction()"> Order Now </button></center>
+   </div>
+   <div class="size">
+   <center> <img src="4.jpeg" alt="order4" width="150px" height="150px">
+   <h4> Name : CAFFE MOCHA </h4>
+   <h4> Size : LARGE </h4>
+   <center><button class="button" type="submit" size="10" onClick="myFunction()"> Order Now </button></center>
+   </div>
+   <div class="size">
+   <center> <img src="6.png" alt="order5" width="150px" height="150px">
+   <h4> Name : CAFFE MOCHA </h4>
+   <h4> Size : LARGE </h4>
+   <center><button class="button" type="submit" size="10" onClick="myFunction()"> Order Now </button></center>
+   </div>
+   <div class="size">
+   <center> <img src="6.png" alt="order5" width="150px" height="150px">
+   <h4> Name : CAFFE MOCHA </h4>
+   <h4> Size : LARGE </h4>
+   <center><button class="button" type="submit" size="10" onClick="myFunction()"> Order Now </button></center>
+   </div>
+  </center>
+  <hr> <br>
+  <center> <h4 id="confname"></h4></center>
+  <center>
+  <button class="button" type="submit" size="20" onClick="myFunction()"> Contact Us </button>
+    <button class="button" type="submit" size="20" onClick="myFunction()"> Report A problem </button>
+  <button class="button" type="submit" size="20" onClick="myFunction()"> About Us </button>
+</center>
+</div>
+<script>
+function myFunction() {
+  let text;
+  let person = prompt("Please enter your name:", "Mariam Abdo");
+  if (person == null || person == "") {
+    text = "User cancelled the request.";
+  } else {
+    text = "Hello " + person + "! Your request has been sent";
+  }
+  document.getElementById("confname").innerHTML = text;
+}
+</script>
+</body>
+</html>
